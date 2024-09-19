@@ -16,7 +16,8 @@
   --sat: 82%;
   --lig: 42%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
+  --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+  /* -4% */
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 12%, 45%);
   --text-color-light: hsl(var(--hue), 8%, 75%);
@@ -56,7 +57,8 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: 0.3s; /* For animation dark mode */
+  transition: 0.3s;
+  /* For animation dark mode */
 }
 
 h1,
@@ -160,11 +162,9 @@ body.dark-theme {
 .profile__perfil {
   width: 100px;
   height: 100px;
-  background: linear-gradient(
-    180deg,
-    hsla(var(--hue), var(--sat), var(--lig), 1) 0%,
-    hsla(var(--hue), var(--sat), var(--lig), 0.2) 100%
-  );
+  background: linear-gradient(180deg,
+      hsla(var(--hue), var(--sat), var(--lig), 1) 0%,
+      hsla(var(--hue), var(--sat), var(--lig), 0.2) 100%);
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -173,7 +173,7 @@ body.dark-theme {
 }
 
 .profile__perfil img {
-  width: 90%;
+  width: 100%;
 }
 
 .profile__border {
@@ -454,6 +454,7 @@ body.dark-theme {
   .profile__info {
     column-gap: 1.5rem;
   }
+
   .profile__buttons {
     flex-direction: column;
     row-gap: 1rem;
@@ -478,6 +479,7 @@ body.dark-theme {
 }
 
 @media screen and (min-width: 776px) {
+
   .projects__content,
   .skills__content {
     grid-template-columns: repeat(2, 332px);
@@ -504,27 +506,34 @@ body.dark-theme {
   .profile {
     padding-top: 4rem;
   }
+
   .profile__border {
     width: 135px;
     height: 135px;
     margin-bottom: 1rem;
   }
+
   .profile__perfil {
     width: 120px;
     height: 120px;
   }
+
   .profile__perfil img {
-    width: 90%;
+    width: 100%;
   }
+
   .profile__profession {
     margin-bottom: 1.5rem;
   }
+
   .profile__info {
     column-gap: 3rem;
   }
+
   .profile__info-description {
     font-size: var(--small-font-size);
   }
+
   .profile__buttons {
     column-gap: 2rem;
   }
@@ -532,6 +541,7 @@ body.dark-theme {
   .projects__content {
     gap: 2rem 3rem;
   }
+
   .projects__modal {
     padding: 1.5rem;
   }
